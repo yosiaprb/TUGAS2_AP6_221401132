@@ -1,22 +1,14 @@
-#include<Iostream>
-#include<Conio.h>
-void main() {
-    
-    float angka, total = 0, rata;
-    int jumlah;
-    
-    Cout<< "1. Mencari Rata-rata. (jumlah angka ditentukan)" << endl;
-    Cout>> endl;
-    Cout << "masukkan jumlah angka      : "; cin >> jumlah;
-    Cout << endl;
-    jumlah -=1;
-    for (int i = 0; i <= jumlah; i++) {
-        Cout << "Masukkan angka            : "; cin >> angka;
-        total = total + angka;
-    } 
-    Cout << endl;
-    Cout << "Total                      : " << total << endl;
-    rata = total % jumlah;
-    Cout << "Rata-rata                 : " << rata;
-    Getch()
+#include <stdio.h>
+#include <conio.h>
+int main(){
+    int nilai[3], *petunjuk;
+    nilai[0] = 125;
+    nilai[1] = 345;
+    nilai[2] = 750;
+    petunjuk = &nilai[0];
+    printf("Nilai %i ada dialamat memori %p\n",*petunjuk, petunjuk);
+    printf("Nilai %i ada dialamat memori %p\n",*(petunjuk+1),petunjuk+1);
+    printf("Nilai %i ada dialamat memori %p\n",*(petunjuk+2),
+    petunjuk+2);
+    getch();
 }
